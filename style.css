@@ -39,7 +39,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   block-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 main {
@@ -109,7 +109,7 @@ h1 span {
     filter: contrast(100%);
   }
   50% {
-    filter: contrast(150%);
+    filter: contrast(160%);
   }
   100% {
     filter: contrast(100%);
