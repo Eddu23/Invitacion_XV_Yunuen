@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fleur+De+Leah&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap');
+.sacramento-regular {
+  font-family: "Sacramento", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fleur-de-leah-regular {
+  font-family: "Fleur De Leah", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bodoni-moda {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root{
+  --colorLetras: #597eb4;
+  --colorGrisLetras: #565656;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(img/Stone.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  block-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+    
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h1 span{
+  font-family: "Fleur De Leah", serif;
+  font-weight: 200;
+  font-size: 4.5rem;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: var(--colorGrisLetras);
+}
+
+h1 span {
+  color: var(--colorLetras);
+  
+}
+
+.fecha {
+  color: var(--colorLetras);
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.sep{
+  color: var(--colorGrisLetras);
+  font-size: 2rem;
+  font-weight: 280;
+}
+
+.marz {
+  font-family: "Libre Baskerville", serif;
+  color: var(--colorGrisLetras);
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.carta{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.carta a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carta img{
+  max-width: 350px;
+}
+
+.carta img {
+  animation: respiracion ease-out 2s infinite;
+}
+
+@keyframes respiracion {
+  0% {
+    filter: contrast(100%);
+  }
+  50% {
+    filter: contrast(150%);
+  }
+  100% {
+    filter: contrast(100%);
+  }
+}
+
+
+.agrad h3 {
+  font-family: "Fleur De Leah", serif;
+  font-weight: 200;
+  font-size: 2.5rem;
+  color: var(--colorLetras);
+  text-align: center;
+}
+
+.padrinos, .padres {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px; 
+}
+
+.padres p, .padrinos p {
+  font-family: "Sacramento", serif;
+  font-size: 1.5rem;
+  color: var(--colorGrisLetras);
+}
+
+.Links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  padding: 20px;
+}
+
+.Links a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  animation: respiLinks ease-out 2s infinite;
+}
+
+.Links p {
+  font-family: "Sacramento", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--colorGrisLetras);
+}
+
+@keyframes respiLinks {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(140%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
+
+.icono{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.redon {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--colorLetras);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.icono i {
+  font-size: 1.5rem;
+  color: white;
+}
